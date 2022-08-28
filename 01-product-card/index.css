@@ -1,0 +1,201 @@
+/* Смотри сколько снизу свободного места! Оно идеально подойдёт, чтобы писать твои стили! */
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	font-style: normal;
+	font-family: Arial;
+}
+main {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.products {
+	max-width: 100%;
+	width: 1180px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: stretch;
+	    -ms-flex-align: stretch;
+	        align-items: stretch;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+}
+.product_card {
+	max-width: 100%;
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+	width: 380px;
+	-webkit-box-shadow: 0px 0px 45px -4px rgba(0, 0, 0, 0.18);
+	        box-shadow: 0px 0px 45px -4px rgba(0, 0, 0, 0.18);
+	border-radius: 12px;
+	background: #FFFFFF;
+	border-radius: 12px;
+}
+.product_card_info_tags {
+	padding: 16px;
+	position: absolute;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	top: 0;
+	left: 0;
+}
+.tags__item {
+	padding: 0 16px;
+	border-radius: 8px;
+	margin-right: 17px;
+	font-size: 16px;
+	line-height: 24px;
+	color: #2F2F2F;
+	text-transform: uppercase;
+}
+.tags__item_new {
+	background: #FDCFF3;
+}
+.tags__item_last {
+	background: #FFCF56;
+}
+.product_card_image {
+	max-width: 100%;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+}
+.product_name {
+	padding: 24px 24px 0px 24px;
+}
+.head_text {
+	text-align: center;
+	padding: 40px 0;
+	font-weight: 900;
+	font-size: 48px;
+	line-height: 72px;
+	text-transform: uppercase;
+}
+.product_name {
+	font-weight: 900;
+	font-size: 24px;
+	line-height: 36px;
+	color: #2F2F2F;
+}
+.product_desription {
+	padding: 0 24px;
+	margin-top: 16px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #2F2F2F;
+}
+.product_card_button {
+	margin: 24px;
+}
+.button {
+	background: #fff;	
+	width: 100%;
+	border: 2px solid #42940F;
+	font-weight: 900;
+	font-size: 18px;
+	line-height: 25px;
+	text-align: center;
+	color: #42940F;
+	cursor: pointer;
+	padding: 7px;
+	text-transform: uppercase;
+	border-radius: 8px;
+	-webkit-transition: .2s;
+	-o-transition: .2s;
+	transition: .2s;
+}
+.disabled {
+	background: #4E4E4E;
+	border: 1px solid #4E4E4E;
+	font-weight: 900;
+	font-size: 18px;
+	line-height: 25px;
+	color: #fff;
+	cursor: not-allowed;
+}
+.button:hover {
+	-webkit-transition: .2s;
+	-o-transition: .2s;
+	transition: .2s;
+	background: #42940F;
+	border: 2px solid #42940F;
+	color: #fff;
+}
+.button:active {
+	-webkit-transition: .2s;
+	-o-transition: .2s;
+	transition: .2s;
+	background: #1F5200;
+	border: 2px solid #1F5200;
+	color: #FFFFFF;
+}
+.disabled:hover, .disabled:active {
+	background: #4E4E4E;
+	border: 1px solid #4E4E4E;
+}
+@media screen and (max-width: 767px) {
+	.products {
+		max-width: 90%;
+	}
+	.head_text {
+		font-size: 35px;
+ 	    line-height: 38px;
+	}
+	.tags__item {
+		padding: 0px 9px;
+	    border-radius: 8px;
+	    margin-right: 13px;
+	    font-size: 12px;
+	    line-height: 18px;
+	}
+	.product_desription {
+	    margin-top: 9px;
+	    font-size: 12px;
+	    line-height: 16px;
+	}
+	.product_name {
+	    font-size: 18px;
+	    line-height: 25px;
+	}
+	.button {
+	    font-size: 13px;
+	    line-height: 14px;
+	    padding: 6px;
+	}
+	.product_card {
+		margin-bottom: 20px;
+	}
+}
+@media (min-width: 768px) and (max-width: 1439px) {
+	.products {
+		max-width: 90%;
+	}
+	.product_card {
+		margin-bottom: 20px;
+	}
+}
